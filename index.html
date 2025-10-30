@@ -1,0 +1,1810 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vi som mäter jorden brinna — Dikter</title>
+  <meta name="description" content="En enkel, reklamfri, mobilanpassad sida för dikter." />
+  <meta name="robots" content="noindex, nofollow">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{ --bg:#f2efe9; --ink:#1a1a1a; --muted:#666; --maxw: 840px; --pad: 1.25rem; --narrow: 680px; }
+    @media (prefers-color-scheme: dark){ :root{ --bg:#111213; --ink:#ededed; --muted:#aaa; } }
+    html, body { background: var(--bg); color: var(--ink); margin: 0; padding: 0; font-family: "EB Garamond", Georgia, "Times New Roman", serif; line-height: 1.6; font-size: 18px; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+    header { max-width: var(--maxw); margin: 0 auto; padding: 3.2rem var(--pad) 1.2rem; text-align: center; }
+    h1 { font-size: clamp(2rem, 4vw, 3rem); letter-spacing: 0.02em; margin: 0 0 0.25rem 0; font-weight: 600; text-transform: uppercase; }
+    .subtitle { color: var(--muted); margin-top: 0.25rem; font-size: 1rem; line-height: 1.35; }
+    .subtitle a { color: inherit; text-decoration: none; border-bottom: 1px solid rgba(0,0,0,0.2); }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 0 var(--pad) 6rem; }
+    .narrow { max-width: var(--narrow); margin: 0 auto; }
+    .foreword h2, .contents h2 { text-transform: uppercase; }
+    .foreword { padding: 0.25rem 0 2rem; border-top: 1px solid rgba(0,0,0,0.08); border-bottom: 1px solid rgba(0,0,0,0.08); margin-bottom: 1.25rem; }
+    .foreword h2 { font-size: clamp(1.3rem, 3.2vw, 1.7rem); margin: 0 0 0.6rem 0; font-weight: 600; letter-spacing: 0.01em; }
+    .prose { font-size: 1.04rem; line-height: 1.7; margin: 0.6rem 0; }
+    .sig { margin-top: 1rem; color: var(--muted); font-size: 1rem; }
+    .contents { padding: 0.25rem 0 2rem; border-bottom: 1px solid rgba(0,0,0,0.08); margin-bottom: 1.25rem; }
+    .contents h2 { font-size: clamp(1.3rem, 3.2vw, 1.7rem); margin: 0 0 0.6rem 0; font-weight: 600; letter-spacing: 0.01em; }
+    .contents .toc { list-style: none; padding: 0; margin: 0.9rem 0 0; }
+    .contents .toc li { margin: 0.35rem 0; }
+    .contents .toc a { color: var(--ink); text-decoration: none; border-bottom: 1px solid rgba(0,0,0,0.15); }
+    .contents .toc a:hover { color: var(--muted); border-bottom-color: var(--muted); }
+    .chapter { padding: 2.2rem 0 0.5rem; border-top: 1px solid rgba(0,0,0,0.08); }
+    .chapter:first-of-type { border-top: none; padding-top: 0; }
+    .chapter h2 { font-size: clamp(1.6rem, 3.5vw, 2.1rem); margin: 0 0 0.4rem 0; font-weight: 600; letter-spacing: 0.04em; text-align: left; text-transform: uppercase;
+                  position: sticky; top: 0; z-index: 2; background: var(--bg); padding-top: 0.25rem; padding-bottom: 0.4rem; box-shadow: 0 1px 0 rgba(0,0,0,0.06); }
+    .poem { padding: 1.2rem 0 1.9rem; border-top: 1px dashed rgba(0,0,0,0.08); }
+    .poem:first-of-type { border-top: none; }
+    .poem h3 { font-size: clamp(1.12rem, 3vw, 1.45rem); margin: 0 0 0.55rem 0; font-weight: 500; letter-spacing: 0.01em; text-align: left; }
+    .vers { white-space: pre-wrap; margin: 0; font-size: 1.05rem; line-height: 1.6; }
+    .footnotes { margin-top: 0.8rem; font-size: 0.92rem; color: var(--muted); }
+    .footnotes-title { font-weight: 600; font-size: 0.92rem; letter-spacing: 0.02em; text-transform: uppercase; margin-bottom: 0.2rem; }
+    footer { max-width: var(--maxw); margin: 0 auto; padding: 2rem var(--pad) 5rem; color: var(--muted); font-size: 0.95rem; border-top: 1px solid rgba(0,0,0,0.08); }
+    .backtotop { position: fixed; right: 16px; bottom: 16px; padding: 10px 14px; border: 1px solid rgba(0,0,0,0.12); background: transparent; color: var(--ink); border-radius: 999px; cursor: pointer; font-family: inherit; font-size: 0.95rem; opacity: 0.85; transition: transform 0.15s ease; }
+    .backtotop:hover { transform: translateY(-2px); }
+    @media (max-width: 520px) { body { font-size: 16px; } .poem h3 { font-weight: 600; } .vers { font-size: 1.02rem; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vi som mäter jorden brinna</h1>
+    <div class="subtitle">Linus Hasselström Langer<br><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#112;&#108;&#104;&#64;&#107;&#116;&#104;&#46;&#115;&#101;">&#112;&#108;&#104;&#64;&#107;&#116;&#104;&#46;&#115;&#101;</a></div>
+  </header>
+  <main>
+<section class="foreword narrow" id="forord">
+  <h2>Förord</h2>
+  <p class="prose">Ibland hamnar man i avstämningspunkter längs vägen. Januari 2026 markerar för mig tio år på KTH och tjugo år i miljö- och hållbarhetsarbete – ett bra tillfälle för mig att reflektera över den roll som vi forskare har i klimat- och miljöarbetet.</p>
+  <p class="prose">Reflektionerna resulterade i dessa texter. </p>
+  <p class="prose">Samlingen har sex avsnitt, som i tur och ordning tar upp olika vinklar på de här frågorna. Den börjar med forskningens och kunskapens mystiska väsen och via några avgrundsvrål avslutar den sedan med att landa någorlunda mjukt i framtidens famn.</p>
+  <p class="prose">De klimat- och miljöförändringar vi är mitt uppe i är en oerhörd förlust och en oerhörd förändring. Vi behöver se att det här är något som inte kommer att ske, utan något som sker, här och nu med omedelbara konsekvenser. Och så ska vi utnyttja hela vårt mänskliga register för att motverka, förstå, samsas och förändra. Det registret är stort och kraftfullt.</p>
+  <p class="sig">Linus Hasselström Langer</p>
+</section>
+<section class="contents narrow" id="innehall">
+  <h2>Innehåll</h2>
+  <p class="prose">Kunskapsbyggande är grunden för mänskligheten (kapitel 1), och det byggandet har också ett pris. Vid sidan av utvecklingens påverkan på världen är även själva kunskapen dyr att äga. Vetskap om miljö- och klimatförändringar är en mörk och tung börda; men vi måste ändå bära fram den (kapitel 2).</p>
+  <p class="prose">Trots full klarhet om både problem och lösning fastnar vi ofta (kapitel 3), men det enda vettiga är att vi jobbar framåt, på de sätt som var och en av oss förmår (kapitel 4). Och även om timman är sen, är vi just nu mitt i en stilla, massiv rörelse till nya synsätt som håller på att förändra vår relation till naturen och miljön på ett grundläggande sätt (kapitel 5).</p>
+  <p class="prose">Med detta sagt kan vi blicka mot en dag där allt är annorlunda, evinnerligt mycket har gått förlorat, och evinnerligt mycket finns kvar (kapitel 6). Det är för den dagen dessa texter har skrivits.</p>
+  <ul class="toc">
+    <li><a href="#kapitel-1">1. Vetenskapen Är Vacker</a></li>
+    <li><a href="#kapitel-2">2. Döden I Vår Väska</a></li>
+    <li><a href="#kapitel-3">3. Beställ En Tolk</a></li>
+    <li><a href="#kapitel-4">4. Gnetet Och Glöden</a></li>
+    <li><a href="#kapitel-5">5. Rörelsen Tillbaka</a></li>
+    <li><a href="#kapitel-6">6. I Framtidens Famn</a></li>
+  </ul>
+</section>
+<section class="chapter" id="kapitel-1">
+  <h2>1. Vetenskapen Är Vacker</h2>
+  <section class="poem narrow" id="1-1">
+    <h3>1.1 Sticklingar</h3>
+    <p class="vers">Den här kom från mormor. 
+Hon var klok hon.
+Mormor fick den av sin lärarinna.
+Hon var också klok, 
+och hon hade tydligen fått den av Palme!
+
+Och han fick den säkert av Mandela!
+Och han fick den kanske av Dalai Lama!
+ 
+Och Dalai Lama fick den av en kompis 
+som pluggade i Berlin,
+och hon hade fått den av sin lärare, 
+- - och det var Einstein!
+
+Och Einstein fick den av Livet.
+Livet fick den av Tiden,
+Tiden fick den av Oturen,
+Oturen fick den av trojanerna, 
+och trojanerna fick den av grekerna.
+ 
+- - Vill du ha en?</p>
+  </section>
+  <section class="poem narrow" id="1-2">
+    <h3>1.2 Den innersta pärlan</h3>
+    <p class="vers">I vattendroppens innersta pärla
+finns ett skimrande, ösande regn
+
+Stor, vild - - dess hemliga kärna;
+och vi stiger rakt in i den sen.<sup>1</sup>
+
+I ögonblickets retfulla sinne
+bor en saga om ett liv.
+Ett långt, vackert böljande minne;
+- - vi ska följa sagans kliv.<sup>2</sup>
+
+Vi börjar med det lilla;
+jordens minsta ting.<sup>3</sup>
+Och hamnar i det stora;
+tidens vida rymd.<sup>4</sup>
+
+För varje tanke
+finns en gnisslande dörr;
+En dörr som bara går inåt.  5
+Bakom den - - en upplyst väg;
+En liten öppning framåt. 6
+
+Vi tror vi skapar, 
+men vi skapas.<sup>7</sup>
+Tror droppen faller; 
+ - - det är vi.
+
+Det är vi som växer,
+inte världen;
+varje steg längs frågans stig.<sup>8</sup>
+
+I vattendroppens innersta pärla
+finns ett skimrande, ösande regn.
+Vi vidgar droppens yta.
+Så bildas vi; med den.<sup>9</sup></p>
+    <div class="footnotes"><div class="footnotes-title">FOTNOTER</div><div class="footnotes-body">1 Se 5.8 De två haven<br>2 Se 5.6 Gubbe-far och Flicke-rar<br>3 Se 4.9 Kompostens poesi<br>4 Se 5.4 Där ska vi gå<br>5 Se 1.12 Saigon svarar<br>6 Se 4.8 Top-down och bottom-up<br>7 Se 6.3 Någonstans halvvägs<br>8 Se 1.9 Tant Till ser hur det ligger till<br>9 Se 6.7 I framtidens famn</div></div>
+  </section>
+  <section class="poem narrow" id="1-3">
+    <h3>1.3 Röda tegelväggar</h3>
+    <p class="vers">Kunskapens väsen är inbyggt här,
+flätat i teglet i väggen.
+Rektanglar och linjer och möten;
+fogarna visar oss vägen.
+
+En tanke blev två,
+- - grodde till ett ämne;
+- - blev en disciplin - - en vetenskap.
+
+En sten i taget.
+
+En fog i taget.
+
+Höger.
+Uppåt.
+Vänster.
+Uppåt.
+Höger…
+
+Det växte fram väggar på Valhallavägen.
+Väggarna blev kartor.
+
+Murgrönan läser teglets kartor
+och berättar för staden.
+Sträcker sig ut.
+
+Mönstren ska speglas i stadens gator.
+Allt ska ut!</p>
+  </section>
+  <section class="poem narrow" id="1-4">
+    <h3>1.4 Trådar söker trådar</h3>
+    <p class="vers">Du tvivlar på din idé,
+för ditt förslag var bara en lös tanke.
+Så nu sitter du och håller på den istället.
+ 
+Det är inte så det ska göras.
+Tvivlet gör inte nytta.
+ 
+För tankar sitter fast.
+De kan vara lösa i en av ändarna,
+men den andra hålls benhårt av sitt ursprung.
+
+Och ursprunget sitter som berget.
+ 
+Lita på din lösa tanke.
+Underskatta den inte.
+
+Tanken är förtöjd.</p>
+  </section>
+  <section class="poem narrow" id="1-5">
+    <h3>1.5 Vetenskapen är vacker</h3>
+    <p class="vers">Visst är flugor fula?
+Tjocka magar, smala ben.
+Bara står och slöar.
+ 
+Men fråga den som fångat en.
+Den flicka med ett glas,
+som suttit där och vaktat den.
+Som undrat: vad är du för en?
+ 
+För henne gnistrar flugan. 
+Gör pärlemor i skimmer.
+För henne tänder flugan
+en facklas första minne.
+ 
+Visst är vetenskapen vacker?
+Följ dess vingars slag.
+Okänd skatt är pulsen.
+Vida vidders blad.
+ 
+Visst är vetenskapen vacker?
+Evigt nyfödd, aldrig klar.
+Fråga tanken om dess mening.
+ – Frågan själv, 
+är tankens svar.</p>
+  </section>
+  <section class="poem narrow" id="1-6">
+    <h3>1.6 Grundforskningen</h3>
+    <p class="vers">Ingen behövde cirkeln.
+Alla behöver hjulet.
+
+Ingen behövde triangeln.
+Alla behöver taket.
+
+Ingen behövde linjen.
+Alla behöver vägen.</p>
+  </section>
+  <section class="poem narrow" id="1-7">
+    <h3>1.7 Lugnet</h3>
+    <p class="vers">Det är lugnet som fångar vinden.
+Det gamla ensamma grubblet.
+
+I tryggt lä vid en blåsig hage,
+en gång i en gammal tid.
+
+Det är lugnet som utformar lagen.
+En sensommarkvälls lättaste tanke
+skrev dess tyngsta ord.
+
+Det är lugnet som bromsar en kärra.
+Inte ivern att stå still.</p>
+  </section>
+  <section class="poem narrow" id="1-8">
+    <h3>1.8 Hjärtat i människans namn</h3>
+    <p class="vers">Apan apar, trädet trädar. 
+Gräset gräsar, haren harar,
+och syrsan syrsar.
+
+Och människan människar. 
+Vi tar reda på saker. 
+
+För hur annars skulle vi ha blivit visa? 
+Den som vet? 
+Den kloka?
+
+Hur annars skulle frö bli bröd?
+Hur annars skulle blad bli bok?
+
+Om vi inte pekat mot regnbågens rand,
+hur annars skulle en skymning vara färggrann?
+
+Om vi inte sökte,
+om vi inte visste.
+hur skulle vi då kunna älska vårt arv?
+
+Människans liv är den tänkandes liv.
+Den kloke är hjärtat i människans namn.</p>
+  </section>
+  <section class="poem narrow" id="1-9">
+    <h3>1.9 Tant Till ser hur det ligger till</h3>
+    <p class="vers">Tant Till hade en penna. Blyerts, halv längd. Ett block. Läderetui, linjerat. En hatt. Blå. En  kappa. Ull. Dessa använde hon flitigt.
+
+Tant Till satt i sitt kök och undrade vart skedarna tog vägen. Hon räknade dem efter varje disk, skrev noggrant i sitt block. <em>1/9: 8st. 2/9: 8st. 3/9: 8st. 4/9: 7st. </em>Hon suckade, men log också. <em>För att veta vad man ska göra måste man först se hur det ligger till</em>, tänkte hon. 
+
+En morgon följde hon en myra över gården. Myran gick inte rakt, den tog omvägar. Sick-sack nerför trappsteget. Klättrade på maskrosens fot. Rundade en kvist. Tant Till tänkte och skrev sen: <em>Även liten vandring svänger. </em>Och hon kände att hon lärt sig något viktigt.
+
+I affären ställde hon sig sist i kön och tog tid. En handlade bröd och mjölk, en annan tjugotvå varor samt pantkvitto. Tant Till skrev: <em>Klockan 11.08: 2 personer. 7 minuter tot. Spridd lycka.</em>
+
+När våren kom mätte hon snön. Förr låg den kvar i månader. Men hon hade en orolig känsla av att det höll på att förändras. 
+
+Mycket riktigt, Nu var den borta på några dagar. Hon skrev: <em>Snö tunnare. Bäck tystare. Fågelsång gles (t.ex. rödhake). Kallt ändå. </em>Och hon fäste pennan på blocket med en rynka mellan ögonbrynen. Drog fruset upp axlarna och kröp ner med näsan i kragen så gott hon kunde.
+
+En kväll senare på våren, när det blivit riktigt varmt, satte sig Tant Till på stenen vid bäcken. Hon bläddrade omsorgsfullt bland sina anteckningar, från skedarna till den försvinnande snön<em> </em>och fåglarna.
+
+<em>Okej, </em>tänkte Tant Till<em>. Okej, då vet jag ju hur det ligger till</em>. Hennes blick var rak och klar. Hon reste sig och rättade till hatten och gick med strama steg vidare.</p>
+  </section>
+  <section class="poem narrow" id="1-10">
+    <h3>1.10 Vi som läser världen stavas</h3>
+    <p class="vers">Adam tar några fiskar till, 
+för annars tar Bertil dem.
+Bertil tar några fiskar till, 
+för annars tar Adam dem.
+Sen blir sjön tom.
+
+Cesar diskar inte sin kopp.
+Det gör inte David heller.
+Sen blir diskhon full.
+
+Eriks fabrik har en skorsten.
+Filips också.
+Sen svälter isbjörnen ihjäl.
+
+Gustav blir beteendevetare.
+Helge blir miljöekonom.
+Ivar blir statsvetare.
+Johan blir miljörättsjurist.
+
+Kalle blir marinbiolog.
+Linus blir poet.
+Martin blir systemanalytiker.
+Niklas blir maskiningenjör.
+
+Olof blir agronom.
+Petter blir fysiker.
+Qvintus blir geovetare.
+Rudolf blir miljörevisor.
+
+Sigurd blir sociolog.
+Tore blir konsult.
+Urban blir upphandlare.
+
+Viktor blir ekotoxikolog.
+Wilhelm blir matematiker.
+Xerxes blir filosof.
+Yngve blir förhandlare.
+
+Zäta blir skatteexpert.
+Åke ser på.
+Ärlig antecknar.
+Östen bestämmer.
+
+Världen stavas - vi sorterar.
+Läser den långsamt formuleras.
+
+Och kanske en dag
+ska världen läsa oss
+och sakta förstå vad vi menar.</p>
+  </section>
+  <section class="poem narrow" id="1-11">
+    <h3>1.11 Glappet</h3>
+    <p class="vers">Vi vet att jorden har ont.
+Vi vet varför.
+Vi vet vad vi ska göra åt saken,
+men vi sitter ändå fast.
+
+Mellan tanke och hand finns ett glapp.
+Det har mellanslagets temperament.
+Det äter oställda frågor.
+Lever av osökta svar.</p>
+  </section>
+  <section class="poem narrow" id="1-12">
+    <h3>1.12 Saigon svarar</h3>
+    <p class="vers">Vissa platser berättar hur det är.
+Hur det har varit, hur det ska bli.
+Saigon är en sådan plats.
+Här finns alla svar,
+om allt vi någonsin kan undra.
+Men svaren ges bara till den som frågar.
+
+Kaffet svartnar i koppen.
+Tjockt som bly, sött.
+Vårt mod att lyssna vaknar 
+i grändens ljud.
+
+Mopederna är en flod.
+Vi är löv i den.
+Och Saigon är Venedig.
+
+Sorlet stiger.
+Alla är på väg.
+Mynta, mango, salt.
+Staden sjuder.
+
+Men den stigande solen lugnar Saigon.
+Hindrar den från att försäga sig.
+Och vi har ännu inte hunnit fråga.
+
+Tvådragets sky smider torn av järn.
+Knapphålen svettas.
+Tornen vill falla.
+Regnet väntar.
+
+Tornen rasar våldsamt.
+Vi skyddar oss.
+Vilket livsviktigt ord finns där,
+inbäddat i åskans muller?
+Måste vi kasta oss ut i vattenfallet?
+
+När natten sjunker är frågan kvar.
+Ingen röst bär den nu.</p>
+  </section>
+  <section class="poem narrow" id="1-13">
+    <h3>1.13 Vi vet innan vi vet</h3>
+    <p class="vers">Vinden är spöklik.
+Såhär mycket ska det inte blåsa.
+- - Ska allt gå av nu?
+
+Ljusets uppsyn skrämmer.
+Det är snett.
+Det verkar fegt. Knastertorrt gräs.
+
+Tidens armar stelnar.
+De hänger så hisnande högt.
+Klamrar sig fast i stupet.
+Långt där nere är dess ljudlösa sug.
+
+Skogsbränder.
+Fotsteget blir ett hål.
+Ingen motkraft. Vi trampar luft.
+Kängorna meningslösa påsar.
+
+Allt blir eld och iskall fukt.
+Allt blir en flackande skugga.
+Värmebölja.
+Allt blir ett vansinnigt minne.
+
+Och vi sluter dagarnas ögonlock en stund.
+
+Och vi vet.
+- - Vi vet innan vi vet.</p>
+  </section>
+</section>
+<section class="chapter" id="kapitel-2">
+  <h2>2. Döden I Vår Väska</h2>
+  <section class="poem narrow" id="2-1">
+    <h3>2.1 Professorn</h3>
+    <p class="vers">Hon bär ett bibliotek i en väska ingen ser.
+Hon läser för de som vill höra.
+
+Varje bokstav en tår,
+varje siffra en sten.
+Där går hon och drar sin eländiga börda.</p>
+  </section>
+  <section class="poem narrow" id="2-2">
+    <h3>2.2 Vi som mäter jorden brinna</h3>
+    <p class="vers">Vi är härdade vi,
+Vi som bokför liv.
+Bödlar födda ur vår tid.
+Vi är härdade vi.
+ 
+Vi som mäter jorden brinna,
+Vi som räknar floden torka,
+Vi som väser åskans kliv --
+Vi är härdade vi.
+
+Skuggans röst är sträv och klar.
+Skarp och mörk och omutbar.
+Sakligt yppar den sin sak.
+Skuggans röst är sträv och klar.
+
+Vi som talar den ska säga,
+Att just du behöver skynda.
+Du har bara bråttom kvar;
+Skuggans röst är sträv och klar.
+ 
+Vi är stenhårda vi.
+Ärrade av år av slit.
+Vant och noggrant vakar vi.
+Vi är stenhårda vi.
+
+Vi som läser arken kantra,
+Relingen mot vågen sakta,
+Bistert bär vi dagens giv --
+Vi är stenhårda vi.</p>
+  </section>
+  <section class="poem narrow" id="2-3">
+    <h3>2.3 Namnge axlarna</h3>
+    <p class="vers">Nya siffror i tidsserien.
+Ser inget vidare ut.
+Kurvan böjer sig mer och mer.
+Lutar fel.
+
+Det kan bli vår slutsats, vår upptäckt.
+Men vi får kommentaren tillbaka:
+
+Namnge axlarna korrekt!
+
+- - Lutningen är inte siffrans,
+den är en ryggrad som hukar
+av vägen till vattnet i Kampala!
+
+- - Den är öron som spetsas
+till suset som dör i Amazonas.
+
+Den är en mjuk vit nos
+på smältande is.
+
+Den är en liten mage full av plast.
+
+En mammas
+tomma åker.
+
+När siffran ritar linjer på ett papper,
+ritas också sprickor.
+Förgreningar som växer,
+över jord, genom vatten,
+och vidare ut i själva luftens bärighet.
+
+Siffran själv är oskyldig.
+Det är vår egen penna som ritar på världen.</p>
+  </section>
+  <section class="poem narrow" id="2-4">
+    <h3>2.4 Sveriges miljökvalitetsmål</h3>
+    <p class="vers">1. Begränsad klimatpåverkan
+2. Frisk luft
+3. Bara naturlig försurning
+4. Giftfri miljö
+
+5. Skyddande ozonskikt.
+6. Säker strålmiljö
+7. Ingen övergödning
+8. Levande sjöar och vattendrag
+
+9. Grundvatten av god kvalitet
+10. Hav i balans samt levande kust och skärgård
+11. Myllrande våtmarker
+12. Levande skogar
+
+13. Ett rikt odlingslandskap
+14. Storslagen fjällmiljö
+15. God bebyggd miljö
+16. Ett rikt växt- och djurliv</p>
+  </section>
+  <section class="poem narrow" id="2-5">
+    <h3>2.5 Döden i väskan</h3>
+    <p class="vers">Hon väntade in i det sista.
+Småpratade.
+
+Ända tills klockan slog 13.00.
+Hennes tur.
+
+Hon lade upp sin mapp på bordet.
+
+Då så: Når vi målen? frågade de.
+Nej, resurserna räcker inte, sa hon.
+Tiden räcker inte, sa hon.
+Viljan räcker inte.
+Vattnet, Luften, 
+Jorden, Elden.
+Räcker inte.
+Det räcker inte, sa hon.
+Inget räcker, sa hon.
+
+Och rummet fylldes till brädden av flugor.
+
+Minnesanteckningar
+Presentation 13.00.
+Målutvärdering redovisas.
+Hon bar döden i sin väska.<sup>1</sup></p>
+    <div class="footnotes"><div class="footnotes-title">FOTNOT</div><div class="footnotes-body">1: Ej kommunicerat vid lunch.</div></div>
+  </section>
+  <section class="poem narrow" id="2-6">
+    <h3>2.6 Den slukande mattan</h3>
+    <p class="vers">Den orientaliska mattan såg oskyldig ut.
+Men när vi beträdde den blev vi fast.
+
+Vi klev över dess tröskel för länge sedan.
+Nu följer vi dess trådar och mönster,
+som alltid leder oss mot samma punkt;
+mot samma bråddjup.
+
+Stegen vi tar upprepar sig,
+som om väven redan bestämt vår riktning.
+
+Linjerna slingrar sig tillbaka,
+en spiral som drar oss djupare in.
+Och mönstret förstärker sig på egen hand.
+
+När de vita knutarna smälter, fastnar solen.
+Och knutarna smälter då alltmer.
+
+När den hårda väven tinar, väser metanet.
+Och väven tinar då alltmer.
+
+När tygets skog brinner, görs kol till vålnad.
+Och skogen brinner då alltmer.
+
+När det blå silket hettas, växer luften av ånga.
+Och silket hettas då alltmer.
+
+Mattan breder ut sig.
+Den förlängs med varje steg.
+Den blir golvet vi går på,
+väggarna som ramar in oss,
+och taket som begränsar oss.
+Den enda yta vi känner.
+
+Vi tror att vi fortfarande har ett val, 
+men vi står alla på mattan,
+och sugs mot dess mitt.
+
+Så frågan är: vad ska vi göra nu?</p>
+  </section>
+  <section class="poem narrow" id="2-7">
+    <h3>2.7 Vad vi ska göra nu</h3>
+    <p class="vers">Vi ska vänja oss,
+Vi ska värja oss,
+Vi ska anpassa oss.
+
+Vi ska bromsa,
+Vi ska minska,
+Vi ska stadga.
+
+Vi ska finna oss i tanken 
+att inget är som förr,
+och spjärna och dra och nå halvvägs.
+Vi ska se en annan väg
+där vinden drar en dörr,
+och nå våra mål, 
+om än alldeles för sent.
+
+Vi ska huka oss och härda,
+Bestämma oss och bära,
+Möta våra grannar med takpapp.
+Ändra våra vanor,
+Ändra våra frågor,
+Och ilska fram den lösning vi saknat.</p>
+  </section>
+  <section class="poem narrow" id="2-8">
+    <h3>2.8 Sanningens konsekvens</h3>
+    <p class="vers">Vi kan prova att bara tiga.
+Vi kan prova att låta samtalen hinna vidare.
+
+Vi kan prova att glömma bort att nämna.
+Prova att vänta.
+
+Vi kan prova att förmildra och linda in.
+Prova att sockra, dämpa, försköna.
+
+Vi kan prova att vinkla, förskjuta,
+dra blickar mot annat, skyla över.
+
+Vi kan prova att tala i omskrivningar.
+Förvränga.
+
+Vi kan prova ett alternativt narrativ.
+Skarva lite, låtsas lite.
+
+Vi kan prova att förfalska.
+Vi kan prova att ljuga.
+
+För ibland är det bäst så.
+Det kan finnas bra motiv.
+
+Kanske för att lätta någon annans börda.
+Kanske för att själv bära oket.
+Kanske för att inte blåsa ut hoppet,
+för att hålla någon uppe i kampen,
+kanske för att skona och trösta.
+
+Kanske för att skydda någon.
+Kanske för att undvika bråk.
+Kanske för att hålla ett förtroende.
+
+Kanske för att vinna tid;
+så någon hinner växa med sin uppgift först.
+Så vi hinner samla kunskap först.
+Kanske för att träffa precis rätt ögonblick.
+
+Kanske tro kan bära där siffror stapplar.
+Kanske drömmar kan vara viktigare än svar.
+Kanske målet kan ursäkta vägen.
+Det är inte så lätt alltid.
+
+Men ibland behöver vi säga bara som det är.</p>
+  </section>
+  <section class="poem narrow" id="2-9">
+    <h3>2.9 Sorgen som bara kunskap kan ge</h3>
+    <p class="vers">Det finns en sorg som de vetande bär.
+De bär den med kupad hand.
+Som en liten unge, späd och skör,
+fram genom vildvuxet land.
+
+De skyddar den,
+ - - vårdar den,
+- - kuttrar den sakta till ro.
+
+Passar den,
+visar den hem 
+sin väg runt sitt stillfyllda bo.
+
+För sorgen som bara kunskap kan ge,
+har en kapsel på sitt lilla ben.
+
+För sorgen som bara kunskap kan ge,
+bär vingar som ingen kan se.
+
+Den stillsamma sorg bara vetande bär,
+ska tålmodigt vrida mot facklornas sken.
+För sorgen vi vårdar, som vetandet ger,
+ska en dag få flyga med kunskapens brev.</p>
+  </section>
+  <section class="poem narrow" id="2-10">
+    <h3>2.10 Brevet till Tumlaren</h3>
+    <p class="vers">Kära Östersjötumlare,
+
+Jag ser dig skära tyst genom vattnet.
+Omgiven av ett ständigt dån av motorer.
+Jag ser hur dina ungar famlar,
+i ett hav där ekot inte längre svarar.
+Du ropar på dem. De ropar på dig.
+
+Det är vi människor som har ställt till det så. För vi har inte vetat bättre.
+
+Jag har själv ungar.
+Vi hör varandra.
+En sådan oerhörd gåva.
+
+Och mina ungar älskar dig.
+De har berättat att ni är färre än någonsin.
+Att fällor stryper din väg.
+Vi bär tillsammans den sorgen.
+
+Men sorgen ger också ett val.
+Vi kan stilla maskinerna.
+Vi kan låta bottnarna vila.
+Vi kan göra plats åt dig.
+Många jobbar med det här.
+Men det tar tid och möter motstånd.
+
+Barnen har skrivit brev till miljöministern,
+och nu skriver jag detta brev till dig.
+Det är också någonting litet 
+jag vill att du ska veta:
+
+Tänderna är vassare än du tror.
+Ta inte hela nätet – ta bara en tråd. 
+En tråd visar dig till nästa.
+Då kan havet öppnas igen.
+
+Härda ut.
+Hjälp är på väg.</p>
+  </section>
+</section>
+<section class="chapter" id="kapitel-3">
+  <h2>3. Beställ En Tolk</h2>
+  <section class="poem narrow" id="3-1">
+    <h3>3.1 Domedagen</h3>
+    <p class="vers">IPCC skrek till i min ficka.
+Jag kände hur världsklockan skenade.
+Ett litet pling bara,
+och nya meter lades till under havsytan.
+Det skrek till i fickan,
+och det var mitt fel också.
+ 
+Så jag tänker på mening och min lilla roll;
+jag tänker sådär när jag städar.
+Att dagarna vandrar för vandrandets skull.
+Att jag ska göra mitt och fokusera.
+ 
+En sak i taget. Bättre göra nåt än noja.
+Och tvätten är torr,
+och ingen kommer att vika så fint som jag.
+ 
+Så jag skriker tillbaka till fickan:
+-Hörru!
+-Din dödsdans och min tvätt får samsas!
+
+Gasellerna flyr medan jag rostar bröd.
+Sardinerna spyr medan jag sätter frön.
+Jag putsar glas i din rämnande tid.
+Jag ba: Jag har ett liv!
+Du ba: Kanariefågeln är död!
+ 
+Du gråter runt knuten på trygghetens hus,
+Jag hör hur du vevar ditt larmande ljud.
+Du ber om hjälp från sådana som jag.
+- - Men jag hinner inte just nu.
+ 
+För nu måste verkligen hunden gå ut.
+Och sen är det middag och mjölet var slut.
+Kan du vänta ett tag lilla domedag?
+Jag har lite annat just nu.</p>
+  </section>
+  <section class="poem narrow" id="3-2">
+    <h3>3.2 Morgondagens förhör</h3>
+    <p class="vers">- Vad gjorde ni?
+kommer de fråga.
+
+- Vårt bästa,
+kommer vi svara.
+
+- Men ni visste ju,
+kommer de säga.
+
+- Ja,
+kommer vi svara.
+
+Det var andra tider då.
+Man gjorde som folk gjorde.
+
+Det var andra tider då.
+Man tyckte som folk tyckte.
+
+Det är nya tider nu.
+Det var andra tider då.</p>
+  </section>
+  <section class="poem narrow" id="3-3">
+    <h3>3.3 Beställ en tolk</h3>
+    <p class="vers">Hur kan de inte fatta?
+De är så dumma.
+Så säger vi,
+vi avsiktligt stumma.
+
+Vi blänger på bullret,
+Väser till värmen,
+Hamrar på havet,
+Skriker på stålet.
+
+Men ingen förstår ju det språket.</p>
+  </section>
+  <section class="poem narrow" id="3-4">
+    <h3>3.4 Derivatan och integralen</h3>
+    <p class="vers">Min handling är obetydlig.
+Så lite av alltet.
+Poff, jag tankade, poff, jag handlade;
+och i det stora hela är effekten noll.
+
+För alla mina egna beslut dränks;
+de försvinner i djupet av miljarder andras.
+
+Och sedan läggs vi alla ihop,
+och då spelar det helt plötsligt roll.
+
+Men jag själv är ändå försumbar.
+Då måste väl alla andra också vara det?
+Men vi ser ju hur skidorna plöjer grus.
+
+Ska jag räknas eller inte?</p>
+  </section>
+  <section class="poem narrow" id="3-5">
+    <h3>3.5 Klimatkonferensen</h3>
+    <p class="vers">1,5 grader ska nås.
+Målen ska nås.
+Målen är redan nådda.
+Inte nådda, men ändå nådda.
+Till 2050.
+ 
+Men utsläppen växer.
+Utsläppen växer.
+Det är bokföringsprinciperna.
+Utsläppen räknas annorlunda.
+Siffrorna är fel.
+Siffrorna är rätt.
+Siffrorna är tillfälliga.
+Det är bokföringsprinciperna som är tillfälliga.
+Rätt.
+ 
+Fossilgas är grön.
+Olja är grönare.
+Grön olja i övergångsekonomierna.
+Kol är en övergång.
+Allt är en övergång.
+
+Nej, det är 2030 som räknas.
+2030 är redan nått.
+Nettonoll.
+Nettonoll till 2050.
+Fast det är 2045 vi ska nå.
+2050.
+2045.
+2050.
+ 
+Vetenskapen visar att siffrorna stämmer.
+Vilka siffror?
+De bästa siffrorna.
+De vackraste siffrorna.
+De bästa och vackraste siffrorna vi någonsin haft.
+ 
+Det är återkopplingsmekanismer.
+Det är återkopplingsmekanismer.
+Den frågan ligger på beredning i Kairo.
+Kairo.
+Då förhandlar vi om dem då.
+Då förhandlar vi om dem då.
+ 
+Det saknas elvatusen miljarder.
+Elvatusen miljarder för den gröna oljan.
+Till Kairo.
+Lyft till Helsinki.
+Lyft till Helsinki.
+Nu har vi fullt fokus på målen.
+Målen.
+Målen.
+ 
+Är vetenskapen med?
+Ja den sitter ju där.
+De hade en annan rapport.
+En annan rapport.
+Den blev flyttad till Kairo.
+Till Kairo. 
+Okej, låt oss då förhandla om fakta.
+Fakta.
+Är alla överens om 2050?
+2050.
+Ja, om det kommer lite senare.
+Lite senare.
+Okej vi gör så.
+2070 flyttas dit.
+Beslut.
+Beslut.</p>
+  </section>
+</section>
+<section class="chapter" id="kapitel-4">
+  <h2>4. Gnetet Och Glöden</h2>
+  <section class="poem narrow" id="4-1">
+    <h3>4.1 Alla ska dra åt samma håll</h3>
+    <p class="vers">För att vår tid ska höras behövs:
+Politik, Teknik och Vilja.
+Mål, Medel och Drivkraft.
+Riktning, Ben och Rörelse.
+Fokus, Muskler och Pannben.
+Lika viktiga alla tre.
+
+När framtiden läser våra fotnoter;
+blir det jämvikt eller hälta,
+som bäst förklarar vår tid?
+
+- - Och var finns ögonen?
+Var finns öronen?
+Var finns smaken, 
+eftertanken och känslan?
+
+- - Var finns hjärtat?
+Var finns märgen?
+Var finns tårarna, 
+lungorna och rösten?
+
+Politik, Teknik och Vilja
+behöver dra åt samma håll.
+Fokus, Muskler och Pannben.
+Vi övar deras partier 
+och deras samspel.
+
+Men om vi vill ha ljud här inne - -
+
+Kanske dirigenten kunde prova 
+att involvera även resten av orkestern?</p>
+  </section>
+  <section class="poem narrow" id="4-2">
+    <h3>4.2 Märgen</h3>
+    <p class="vers">Djupt i märgen finns en kraft;
+Ett dån när orken stumnar.
+Dold i märgen finns en röst;
+Ett vrål när hoppet dalar.
+
+Ur märgen reste sig människan;
+av törst, av hunger, och av köld.
+- - Vår märg vår evigt starka sköld.
+- - Och tålig blev människan.
+
+Den står trygg och väntar;
+lugn i dagligt göra.
+Men dagen då kampen tystnar;
+då låter den kampen få höra.
+
+ – En mil till!
+ – Ett andetag till!
+Märgens raka order.
+ – En bit till!
+ – En gång till!
+Det enda märgen kräver.
+
+Djupt i märgen finns en kraft;
+Ett dån när orken stumnar.
+Den föds när natten trivs som bäst.
+
+Visst hör vi hur den mullrar?</p>
+  </section>
+  <section class="poem narrow" id="4-3">
+    <h3>4.3 Stora tal</h3>
+    <p class="vers">Miljarder ton koldioxid.
+En miljon hotade arter.
+
+Biljoner ton is som smälter.
+Tusen stormar starkare än förut.
+
+De stora talen dränker oss i förtvivlan.
+Vi kan aldrig bära dem.
+
+Men talens lycka är deras sprödhet.
+De kan smulas till flarn.
+
+Vi behöver inte lyfta alla stora tal;
+bara flarnen, ett i taget.
+
+Flarnen är precis lagom stora 
+för våra händer.</p>
+  </section>
+  <section class="poem narrow" id="4-4">
+    <h3>4.4 Vågskvalp</h3>
+    <p class="vers">Det kluckar vid båthuset
+Solen glöder
+Sommaren vaggar och bäddar.
+Vattnet blinkar i de söta små skvalparna.
+
+Varje skimrande topp är ett tidevarv.
+En egen epok;
+med egna små sagor och strävor.
+
+Och där kommer vår generation guppande!
+- - där kommer ju jag och krusar!
+med solbrända ben och brisen i fjuna!
+
+Där nynnar vi mot vattenbrynet.
+Jag är vågskvalp;
+Inget större, inget mindre.
+
+Men jag har min chans.
+Jag ska stänka som fan!</p>
+  </section>
+  <section class="poem narrow" id="4-5">
+    <h3>4.5 Vattna</h3>
+    <p class="vers">Benen är tunga,
+men vi orkar.
+Krisen är inte framtidens sak;
+Den är här med oss nu.
+Den är din att lösa. - - Min.
+
+Ska vi räddas eller förgöras? - -
+Nej, det är inte jordens alternativ.
+Världen gör inte så.
+Sådana svar kan inte klyvas i två.
+
+Stark är tanken, men inte vass.
+Går av, gör svaret ej;
+svaret tänjer sig.
+
+Nej, vi får ta hand om vår kris.
+Rädsla gömmer den sig i.
+Bakom våra skygglappar.
+Det är där vi ska leta.
+
+Vi väntar.
+Vi samlar kraft.
+Vi samlar vår tanke.
+Det vi samlar på kan inte samlas.
+
+Stora dåd är inte modets svar,
+och heller inte hoppets mål.
+Stora dåd hör till dåren;
+Hoppets gärning görs av jorden.
+
+Skotten finns i marken,
+Vattna!
+Väntar där på vatten,
+Vattna!
+Rädda inte världen,
+Vattna!
+Fäkta inte elden,
+Vattna!
+
+Bär inte svar.
+Bär inte hopp.
+Bär inte rädsla.
+Bär vatten.</p>
+  </section>
+  <section class="poem narrow" id="4-6">
+    <h3>4.6 Gnetet och glöden</h3>
+    <p class="vers">Världen ska räddas av de som gör sitt;
+inte av väntan på mirakel.
+Resa sin ryggrad med systerns hjälp;
+lindas i almlöv, sömmas med tagel.
+
+Skolskjutsens vagn är framtidens mor;
+draghästens mule dess stränge far.
+Världen ska vändas som daggmaskens jord;
+vattnas som daggkåpans bredhänta blad.
+
+Gnetet och glöden är eldens själ.
+Lågan sträcks inte mot löften.
+En pinne är facklans enkla grund.
+En gnista och handen mot luften.
+
+Sprickor ska fogas av murarens kitt;
+inte av stans generaler.
+Världen ska räddas av de som gör sitt;
+som lagar den lite i taget.</p>
+  </section>
+  <section class="poem narrow" id="4-7">
+    <h3>4.7 Tant till säger till</h3>
+    <p class="vers">Tant Till satt som vanligt i sitt kök. Pennan var vässad, blocket öppet. Hon hade redan räknat skedarna, mätt snön, följt myran. Men nu skrev hon tätare, ivrigare. 
+
+<em>12/4: Bäcken rinner svagt. Men </em><em>någon sjunger ändå. 13/4: Två steg till. Trots trötthet.</em><em> </em><em>14/4: Fingrar som lyfter, fast de darrar. </em>
+
+Hon suckade, men log också. För varje liten anteckning var ett bevis att det faktiskt gick. Att människor orkar lite till.
+
+En eftermiddag satte hon sig på stenen vid bäcken. Hon bläddrade i blocket, från början till slut: skedarna, myran, kön i affären, snön som smälte för fort. Och alla dessa små ord om trots och uthållighet. 
+
+Hon stängde beslutsamt blocket, rätade på ryggen och gick. Förbi gården, förbi affären, fram till kommunhuset. Där stod hon i dörren, med blocket i handen. Och hon sa, tydligt men utan att höja rösten:
+
+<em>”Nu vet vi hur det ligger till. Bäcken tystnar. Och jag har skrivit ner det, dag för dag. Jag har redan börjat: Jag gick hit istället för att köra. Och nu får bilen stå. Men det här gäller inte bara mig. Nu måste ni göra ert också. Och släng det där äpplet i komposten sen!”</em>
+
+Hennes blick var rättfram. Hon vände på klacken och gick med strama steg vidare.</p>
+  </section>
+  <section class="poem narrow" id="4-8">
+    <h3>4.8 Top-down och Bottom-up</h3>
+    <p class="vers">När upp möter ner
+och ner möter upp;
+Först då,
+Först då 
+kan det spira.
+
+När droppar från skyn
+möter rötter i jord;
+Först då,
+Först då 
+kan det spira.
+
+När ramarna ges
+och friheten tas;
+Först då,
+Först då 
+kan det spira.
+
+Först då kan det spira,
+när handen är varm.
+Först då kan det växa,
+när vägar är val.
+
+När små får vara små
+och den store är trygg;
+först då sitter visdom
+på bladverkets rygg.
+
+Vi litar på målet
+och målet på oss.
+Vi färdas och vet 
+vart det riktar oss.
+
+När tyglar av näver
+har ådror av siden,
+som kramar det blod 
+som till knopparna rider;
+
+Först då 
+kan vi tyglarna fylla.
+Först då, 
+Först då
+kan det bära.
+
+Först då, 
+Först då
+kan vi styra.
+Först då,
+Först då, 
+Först då.
+
+Först då kan det spira.</p>
+  </section>
+  <section class="poem narrow" id="4-9">
+    <h3>4.9 Kompostens poesi</h3>
+    <p class="vers">Torv och blad och bröd nu vandra,
+lika inför det som varda.
+Skal och skrot gör jorden mjuk;
+en myllrande stad ser dagens ljus.
+
+Svampen är ett bageri.
+Fukt och damm blir energi.
+
+Allt isär till små fragment;
+spillror som finns kvar.
+Ingenting är permanent,
+men änglaklippet spars.
+
+För jorden ger och jorden tar.
+ - Ja - Kompostens poesi är rak.
+
+Stoft och död blir skott igen.
+Äppelskruttet: gryningen.</p>
+  </section>
+</section>
+<section class="chapter" id="kapitel-5">
+  <h2>5. Rörelsen Tillbaka</h2>
+  <section class="poem narrow" id="5-1">
+    <h3>5.1 Luftens poesi</h3>
+    <p class="vers">Det finns så mycket som varit;
+så mycket som luften tar.
+
+Vi andas ut,
+- - för det som försvunnit
+
+och in,
+- - för det som finns kvar.
+
+Mellan andetagen,
+i parentesen,
+
+-- virvlar rörelsen tillbaka - -
+alldeles av sig själv.</p>
+  </section>
+  <section class="poem narrow" id="5-2">
+    <h3>5.2 Parentesen</h3>
+    <p class="vers">Vi är på en stadig väg,
+även om den inte följer grusets raka drag.
+
+Vi famlar med tekniken.
+Ritar streck på kartor,
+vars prassel för länge sedan stelnat.
+Vars doft snart ingen minns,
+på mark som digitaliserats till senhöst.
+
+Men naturen har inte glömt oss.
+Den väntar tålmodigt,
+som en vän som redan förstår förklaringen
+innan vi öppnat munnen.
+
+Den finns i våra handflator.
+De tar vant emot svalkan från regnet.
+
+I våra fötter och lungor;
+som minns var rötterna går.
+
+Och i vår blick;
+som dras mot den färggrannaste blomman;
+utan att veta varför.
+
+Vi ska inte tillbaka,
+men vi ska vidare;
+mot världens äldsta framsteg.
+
+Det steget är redan påbörjat.
+
+Och fotisättningen,
+fortsättningen,
+är autonom.</p>
+  </section>
+  <section class="poem narrow" id="5-3">
+    <h3>5.3 Världen tar sats</h3>
+    <p class="vers">Jag står här i askan gör jag.
+
+Det kommer fin frisk luft här.
+
+Det var några små-rötter 
+som hittade en spricka,
+och där blev det tillräckligt för att få ett bra fäste.
+
+Ja, man är ju lite envis kanske.
+men det är ju bara som det är.
+Jag kan ju inget annat, 
+det var ju här jag hamnade.
+
+Och solen är ju här rätt mycket 
+också faktiskt.
+Och regnet med, så det har jag ju också.
+Så jag växer på jag.
+Det går ju inte jättefort, 
+men det växer fint ändå.
+Det gör det tycker jag.
+
+Så jag känner mig grön och fin.
+Kolla det här bladet fick jag jobba med,
+men det blev riktigt tufft tycker jag.
+Det kan man fälla upp på dagarna.
+
+Jag ska försöka sträcka mig 
+dit bort också faktiskt;
+ser du där borta vid den andra stenen?
+Jag tror det kan vara rätt bra där.</p>
+  </section>
+  <section class="poem narrow" id="5-4">
+    <h3>5.4 Där ska vi gå</h3>
+    <p class="vers">Regn i dagar,
+dugg i år.
+
+Bistert grå vårt trånga valv;
+men trädet sträcker grenar 
+över seklers mark.
+
+Vidderna, vårt frö och arv.
+
+Där ska vi vistas,
+under lövens himmel.
+
+Där ska vi färdas,
+Där ska vi gå.
+
+Öppna upp vår trånga vrå.
+Trädets blick är långt härifrån.
+Rötter i urberg, krona i moln;
+
+Där ska vi färdas,
+Där ska vi gå.</p>
+  </section>
+  <section class="poem narrow" id="5-5">
+    <h3>5.5 Broar av tid</h3>
+    <p class="vers">Broar av tid,
+med valv av undran.
+Sten efter sten finner ro.
+
+Fog för fog,
+av spretande timmar;
+fästa i femtusen ord.
+
+Sekunden sätts, minuten vävs,
+evigt enad med sin vän.
+Evigt kilad bär den allt;
+
+Evigt stark,
+med sin et al.
+
+Ovanför valven drar åskan förbi.
+Orden blöts upp i ett regn.
+Fakta blir vind - 
+blir fantasi - 
+och blixten blir sanningen.
+
+Men stenen är kvar.
+Den känner sin plats,
+Sin tyngd och sin enkla mening.
+
+Alltid så grundmurat 
+fast i sin hållning.
+Dropparna kanar i valvets krökning.
+
+Och en dag, när larmet lagt sig,
+när dimmorna stiger från ån.
+går någon över bron
+och läser dess vikt;
+och ser vart den pekar och kommer ifrån.
+
+Broar av tid,
+med valv av undran.
+Sten efter sten finner ro.
+
+Broar av tid,
+med valv av undran.
+fästa i femtusen ord.</p>
+  </section>
+  <section class="poem narrow" id="5-6">
+    <h3>5.6 Gubbe-far och Flicke-rar</h3>
+    <p class="vers">Det blir en gång en sommar igen,
+Drömlätt som barndoms dagar.
+Och stigarnas virrvarr i skymningen,
+Bär oss i dimhöljd saga.
+ 
+ – Kom HIT!
+viskar dom.
+ – Kom HIT!
+Allt stigarna ber om är lätt.
+Ditt nukliv är nästklivets käraste vän.
+Det blir en gång en sommar igen.
+--- 
+Det blir en gång en flicka,
+med fnitter av glittrande guld.
+Hon hittar en pärla i myllan,
+och kramar den hemlighetsfullt
+ 
+ – Men VA!
+skrattar hon
+ – Jag DÖR!
+ – Och kolla fågeln som står där och fixar!
+Och koltrasten bugar och nickar.
+Det blir en gång en flicka.
+---
+Det blir en gång en gubbe,
+med nogsam och nyfiken blick.
+Han sätter sig ner med en kaffe,
+på soffan som farfar hans byggt.
+ 
+ – Så-HÄR!
+säger han.
+ – Så-HÄR!
+och återger yvigt stunden,
+när koltrasten ”gömt sig” på stubben.
+Det blir en gång en gubbe.
+ ---
+Och gubben och flickan blir varse,
+med skrönornas märkliga tur;
+att fågeln de såg nu i morse,
+var en och samma filur.
+ 
+ – Men GUD!
+säger hon.
+ – Vad SJUKT!
+ – Den var typ som en seriefigur!
+Och gubbe-far’n roas av barnbarnets tjut;
+klappar sin katt och ser klurskäggad ut.
+---
+ Och koltrasten flög sedan nöjt
+tillbaka till mig där jag satt
+på soffan jag målat i flit och fröjd,
+den sade med näbbgipan glatt:
+ 
+ – HURRA!
+Sa koltrasten.
+ – TJOHO!
+ – En flicka ska hitta din pärleskatt!
+ – Tiden ska kommas ikapp!
+ – Och soffan din ska få katt!
+---
+ Och koltrasten fortsatte prata:
+ – Jag tycker vi gör något bus!
+Ger gubben och tjejen en gåta!
+Skriv nåt i soffan! … Det vore väl kul!?
+
+ – O-kej!
+Sa jag.
+ – O-kej.
+Och kände hur tveksamt det lät.
+Jag tog den penna jag hade
+—
+och öppnade locket och skrev.
+Jag skrev nåt så klokt jag kunde.
+Det blev vad det blev,
+men sen tänkte jag lite mer.
+ ---
+Och så lät jag sen gräsmattan växa.
+För friare liv lever starkare dar;
+Typ så tänkte jag.
+Släppte stråna och blommorna fria;
+Gav naturen en chans att själv göra val.
+ 
+- UT!
+Sa blommorna.
+- Ta PLATS!
+- För var och en ensam vissnar vi snart.
+- Ropa till roten och skotten ditt tal.
+- Dess eko ska nagla vår juninatt kvar.
+—
+Gubbefar’n ilsknar på soffan.
+Den knarrar och gnäller med retfulla ljud.
+Han lyfter på locket och tittar:
+“Hej Hej!” Lyder en fin krumelur.
+ 
+- JUST FAN!
+brister han.
+- JUST FAN!
+- Det var det farsan berätta’ för mig!
+- Att farfar nog skrivit det där någon gång.
+Han kollar på texten igen: “Hej Hej!”
+---
+ Och trasten och jag satt och fnula’ en stund
+på tiden som levts och ska levas.
+Är åren som binds med framtidens stund
+ett ögonblicks rikaste delar?
+ --
+<em>Det var sådär det var ungefär, så jag minns det. Det var då tiden knöt ihop sig med sig själv till ett trassel. Koltrasten flög fram och tillbaka flera gånger med små uppdrag och äventyr och vi planterade in små budskap här och där till Gubbe-far och Flicke-rar. Och varje gång kom trasten tillbaka och gladdes åt hur Flicke-rar ska bli stor så snabbt, hur fint spaljén fortfarande ska sitta på den varma väggen vid ladan, och att svalorna faktiskt ska blir fler. </em>
+
+<em>Men precis som min egen, kommer även framtidens små sagor att bytas ut mot nya och vävas ihop i fina små trassel.</em>
+---
+Gubbefar’n dör sen en dag.
+Han lagar aldrig sitt knarr.
+Och flicke-rar’n vankar på ängen;
+Ögonen glittrande pärlande salt.
+ 
+- Jahapp.
+Tänker flickan.
+- Det var det.
+Så ensamt och kort.
+- Hej då!
+Säger hon.
+- Hej då!
+Så gräver hon gubbefar’ns aska bort.
+
+På ängen hon plocka ska blommor
+att lägga vid gubbefar’ns bo.
+Och prästkrag sig spänna ska ståtligt.
+För just denna dag slog den rot.
+ 
+- Ta MIG!
+Säger den.
+- Ta MIG!
+- Låt mig bli till tiden som han.
+Och Flicke-rar lägger sen blomman
+tårögt i Gubbe-far’ns famn.</p>
+  </section>
+  <section class="poem narrow" id="5-7">
+    <h3>5.7 Solpanel på härbret</h3>
+    <p class="vers">Härbret står kvar här i slänten,
+lutat sammanbitet mot vinden.
+Det minns mig som liten.
+Dagar när solen värmde taket.
+
+Härbret står kvar här i slänten.
+Det blänker en ruta mot himlen.
+En spegel för solens gång.
+Ljuset går hela vägen hem.
+
+Härbret står kvar här i slänten.
+Man måste gå försiktigt här.
+Med skruvdragare och samvete;
+Men morfar skulle ha gillat tanken.
+
+Härbret står kvar här i slänten.
+Solen dras varsamt in.
+Den får börja så;
+min lilla revolution.</p>
+  </section>
+  <section class="poem narrow" id="5-8">
+    <h3>5.8 De två haven</h3>
+    <p class="vers">Havet häver sig över kanten.
+Det bryter klippan;
+Bryter staden sten för sten.
+
+Vågorna skriver nya gränser;
+armbågade fram över maktlös karta.
+
+Detta är det hotfulla havet.
+Vi mäter varje krusning med linjal.
+Räknar dess dån i århundraden.
+
+Men under ytan rör sig ett annat hav.
+ - - Det bygger klippan.
+Bygger staden sten för sten.
+
+Detta är det hoppfulla havet.
+ - - Ett hav av tidens kraft.
+
+Det formar världen omsorgsfullt,
+I varje våg, 
+I flod och ebb,
+I varje årstids ordnade grepp.
+
+Och vi, redan svepta i dess ström,
+har varsin vajande pensel.
+Vi målar en gränslös karta.
+
+Det hoppfulla havet stänker.
+En glittrande hälsning
+mot den grå klippans rock.
+
+Vi väntar på framtidens vändpunkt,
+men vi är redan i dess vatten.
+
+Vi räknar inte det havets rörelser;
+Mäter inte det havets kraft.
+Väger inte dess samlade visdom.
+
+Vi ser inte tankens revolution.
+Det hoppfulla havet har inte bråttom.
+Dess spegel visar generationer, 
+inte månader och år.
+
+Men det formar världen stilla.
+När vi vänder oss om…
+
+…ser vi att kustens kontur
+ redan har förändrats.
+
+Det är inte längre kargt vid kusten.
+Där finns en grönskande strandäng.
+
+Havet är inte längre en gräns.
+Vi lyssnar till dess ord
+som till en gammal vän.
+
+– Vilken stig i djupet följde du?
+frågar vi vågen.
+Vågen svarar:
+– Samma som du själv.
+
+Det hoppfulla havet 
+har öppnat våra torra ögon.
+Vi stod aldrig på det grunda.
+Vi var alltid samma böljande andetag.</p>
+  </section>
+</section>
+<section class="chapter" id="kapitel-6">
+  <h2>6. I Framtidens Famn</h2>
+  <section class="poem narrow" id="6-1">
+    <h3>6.1 Det blir en fin dag imorgon</h3>
+    <p class="vers">Vi gav vad vi hade.
+Nu ska vi vila.
+
+Det blir en fin dag imorgon.</p>
+  </section>
+  <section class="poem narrow" id="6-2">
+    <h3>6.2 Kolskuggan</h3>
+    <p class="vers">Kolskuggan drar över jorden.
+Sakerna släpar den,
+liten eller stor.
+
+Vår bok bär den.
+Vår föda bygger den.
+
+Kedjor i skuggans siluett
+adderas bit för bit.
+
+Vi släpar också kolskuggan;
+
+den följer våra steg minutiöst;
+vår skuldsatta tvilling;
+vår utsträckta ordlösa avbild.
+
+Den blir längre och längre
+minut för minut.
+
+Men vi går mot natt.
+Kolskuggan ska lösas upp 
+av mörkrets ro.
+
+Under natten arbetar den noggranne.
+Flitigt, ostört, i glödande stilla takt.
+Klockslagen frånkopplade.
+Tillräcklighetens lampa tänd.
+
+Det blir en sådan natt i natt.
+
+En natt då vi samlar alla bitar
+och steg för steg löser pusslet.
+
+Det finns gott om tid innan morgonen.</p>
+  </section>
+  <section class="poem narrow" id="6-3">
+    <h3>6.3 Någonstans halvvägs</h3>
+    <p class="vers">Vi lånade jorden och träden en stund.
+Hur kunde vi klättra så vansinnigt högt?
+Vi som bara var apor en gång.
+
+Med ingenting annat än varandra,
+ingenting annat än nyfikenhet.
+ingenting annat än påhittighet.
+
+Vår mor gav oss förtroende.
+Vi klättrade så högt vi kunde.
+Där trädens högsta kvist tog slut
+byggde vi tinnar och torn.
+
+Högre och högre uppåt,
+vi knöt inte riktigt ihop.
+
+Vi skulle ju ha murat stadigare.
+Hittat fästpunkter, 
+lutat oss mot varandra.
+Byggt ny grund.
+Funderat en stund.
+
+Nu kommer vinden.
+Nu kommer regnet,
+kylan och värmen och torkan.
+Nu faller vi från molnets skira kant.
+Ja, vi är mitt i fallet.
+Och vi drar så mycket med oss när det rasar.
+
+Vi är ett jordskred 
+av prydnader och dekorationer,
+balkonger, lampor och glas;
+surrade runt en björks tunna gren.
+
+När vi faller, rycks både björk och rot, 
+och hela marken, med.
+Ner i den tysta rörelsen,
+som hav mot hav,
+mot en bottenlös sluttning 
+till jordens mitt.
+
+Och någonstans halvvägs
+tar jorden emot oss i en mjuk famn.
+Vi är hennes barn.
+
+Lärdomen är ofattbart dyr.
+
+Och så ska vi börja om.
+Och så ska vi ska bygga stillsamt.
+Vi ska bygga stadigt i stormen.
+Ett byggande som spirar,
+med vacker resonans.
+Ett byggande som sjunger med tiden.</p>
+  </section>
+  <section class="poem narrow" id="6-4">
+    <h3>6.4 Morgondagens dop</h3>
+    <p class="vers">När dagen vaknar är den ny.
+Den kan inget annat än morgonen.
+Den vet inte något om gårdagen.
+
+Gårdagen ger den dess namn,
+Ställer den i ordning,
+Putsar dess dopsked,
+Och lär den allt den kan.
+
+Dagen gör sitt bästa med sin lott.
+Varken tacksam eller missnöjd.
+Provar nyfiket det den fått.
+Kollar hur långt resan har nått.
+
+När dagen vaknar är den ny.
+Bara fötter trippar blygt.
+Golvet las på farfars tid,
+Allt det andra ordnar vi.</p>
+  </section>
+  <section class="poem narrow" id="6-5">
+    <h3>6.5 Det lyckliga slutet</h3>
+    <p class="vers">Vår tids stora, viktiga årtionden
+blev inte som de skulle.
+
+Vi nådde inte målen,
+och det visste vi nog redan från början.
+
+Vi tappade för mycket längs vägen.
+Musklerna tog slut.
+
+Men det lyckliga slutet 
+har en tendens att överraska.
+
+Det kanske är dags 
+att vi håller utkik efter en skatt nu;
+någonstans där vi ännu inte har letat?
+
+Det bör kunna röra sig om 
+något mycket viktigt.
+
+Och dessutom är det väl även dags
+att vi själva lämnar våra skatter till framtiden?</p>
+  </section>
+  <section class="poem narrow" id="6-6">
+    <h3>6.6 Gubbefar’ns sång: Ruiner</h3>
+    <p class="vers">Benen blir långa,
+åren blir korta,
+de små bara fnittrar förbi.
+
+Jag försöker hålla stormen lugn,
+vattnet borta,
+och själv göra mitt, i min tid.
+
+Jag ska göra mitt bästa
+Än finns det kraft i mitt timmer
+
+Men om allt det jag lämnar är ruiner
+Ska jag putsa dess pelare fina
+Jag ska märka upp alla små bitar
+Och lägga dem sida vid sida
+Begrava en kista vid kullen
+När kåken nu vittrar med tiden
+Om allt det jag lämnar är ruiner
+Ska jag spara varendaste flisa
+
+En centimeter,
+två centimeter,
+kan jag stumt hålla havsytan borta?
+
+En sekundmeter,
+ - - bara en - -
+Kan jag minska på stormvindens ilska?
+
+Jag ska göra mitt bästa
+Än har jag orken och tiden
+Och om allt det jag lämnar är ruiner
+Ska jag putsa dess pelare fina
+Jag ska märka upp alla små bitar
+Och lägga dem sida vid sida
+Begrava en kista vid kullen
+När kåken nu vittrar med tiden
+Om allt det jag lämnar är ruiner
+Ska jag spara varendaste flisa
+
+För någon ska hitta
+en groda vid dammen
+För någon ska höra
+att fågeln finns kvar
+För någon ska känna
+doften av hopp
+på just samma sätt 
+samma sätt som jag
+
+Om allt det jag lämnar är ruiner
+Ska jag gömma en skatt från min tid
+Om allt det jag lämnar är ruiner
+Ska jag bädda ett frö däruti
+
+Benen blir långa,
+åren blir korta.
+De små bara fnittrar förbi
+
+Men just den där dan,
+Vems den än blir,
+för den är aldrig tiden förbi.</p>
+  </section>
+  <section class="poem narrow" id="6-7">
+    <h3>6.7 I framtidens famn</h3>
+    <p class="vers">Om vi bara är skröpliga gubbar
+Och jordnära pliriga gummor
+Som vilat för varma och trygga
+I doft på en nytvättad kudde
+ 
+Om vi gäspande bara vill komma ikapp
+När ångmotorn bultar allt fortare fram
+Om vi reder vårt liv bara så som vi kan
+Kan vi då få väckas i framtidens famn?
+ 
+Om vi lågmält förlåter det gångna
+De forsar som redan har runnit
+Om vi har hjärta att frälsa
+De människor som redan har funnits
+
+Om vi frikänner bonden som brände sitt land
+Och fattar hans spensliga jordiga hand
+Och möter hans ögon och säger hans namn
+Kan vi få förlåtas i framtidens famn?
+ 
+Om vi från och med nu kan förändra
+Om vi lyssnar till handlingens viskning
+Trots disets konst att förvilla
+Låter mod ge vår skuta en riktning
+ 
+Om vi sträcker vår rädsla på ilsket hav
+Möter skräck med mjölksyra, blicken stram
+Och utmattat pekar i riktning mot land
+Kan vi sen få vila i framtidens famn?</p>
+  </section>
+</section>
+  </main>
+  <footer>
+    <div>© 2025 Linus Hasselström. Alla rättigheter förbehålls.</div>
+    <div>Senast uppdaterad: 2025-10-30</div>
+  </footer>
+  <button class="backtotop" aria-label="Till toppen" onclick="window.scrollTo({top:0, behavior:'smooth'});">↑ Upp</button>
+</body>
+</html>
