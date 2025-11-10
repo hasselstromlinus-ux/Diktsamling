@@ -59,19 +59,23 @@
 .bihang {
   margin-top: 1rem;
   padding: 0.75rem 1rem;
-  border-left: 3px solid #ccc;
-  background: #fafafa;
+  border-left: 2px solid currentColor; /* använder textfärgen dynamiskt */
+  background: transparent; /* följer sidans bakgrund */
+  opacity: 0.9;
 }
+
 .bihang-title {
-  font-size: 0.95em;
+  font-size: 0.9em;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
-  opacity: 0.8;
-  margin-bottom: 0.25rem;
+  letter-spacing: 0.05em;
+  opacity: 0.7;
+  margin-bottom: 0.4rem;
 }
+
 .prose {
-  white-space: normal; /* så blir det riktig löptext, inte radbruten vers */
+  white-space: normal;
   line-height: 1.6;
+  color: inherit; /* ser till att textfärgen följer mörkt/ljust läge */
 }
   </style>
 </head>
