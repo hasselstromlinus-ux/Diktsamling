@@ -85,20 +85,23 @@
 .poem-highlight {
   position: relative;
   margin: 3em auto;
+  text-align: center;         /* centrerar allt i blocket */
 }
 
 .poem-highlight::before,
 .poem-highlight::after {
   content: "";
   display: block;
-  width: 40vw;        /* responsivt på mobil */
-  max-width: 140px;   /* lagom tak på större skärmar */
+
+  width: 28vw;                /* mindre och finare */
+  max-width: 90px;            /* diskret storlek */
   aspect-ratio: 6 / 1;
   margin: 0.5em auto;
 
   background-image: url("snirkel-grey.svg");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;  /* perfekt centrerad */
 }
   </style>
 </head>
