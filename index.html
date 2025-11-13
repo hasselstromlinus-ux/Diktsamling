@@ -81,6 +81,25 @@
   color: inherit; /* ser till att textfärgen följer mörkt/ljust läge */
   font-style: normal;  
 }
+/* Dekorativ snirkel över/under utvalda dikter */
+.poem-highlight {
+  position: relative;
+  margin: 3em auto;
+}
+
+.poem-highlight::before,
+.poem-highlight::after {
+  content: "";
+  display: block;
+  width: 40vw;        /* responsivt på mobil */
+  max-width: 140px;   /* lagom tak på större skärmar */
+  aspect-ratio: 6 / 1;
+  margin: 0.5em auto;
+
+  background-image: url("snirkel-grey.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
   </style>
 </head>
 <body>
