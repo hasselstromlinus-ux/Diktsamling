@@ -101,6 +101,19 @@
     background-size: contain;
     background-position: left center; /* för snirkeln mot vänster */
     transform: translateX(20px); /* liten handritad-känsla */ }
+
+    /* Grafisk pausmarkör / divider */
+.divider {
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 0;   /* luft ovanför och under symbolen */
+}
+
+.divider svg {
+  width: 30px;         /* lagom storlek – prova 24–36 vid behov */
+  height: 30px;
+  opacity: 0.8;        /* lite mjukare än kolsvart */
+}
   </style>
 </head>
 <body>
@@ -706,7 +719,16 @@ skriver på helt andra sätt.
 Kluckarna vaggar kristallerna varmt.
 Stjärnorna tåras en kortfattad skvätt.
 </p>
-</section><section class="poem narrow" id="2-8">
+</section>
+    <div class="divider">
+  <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <line x1="15" y1="2"  x2="15" y2="28" stroke="black" stroke-width="1"/>
+    <line x1="2"  y1="15" x2="28" y2="15" stroke="black" stroke-width="1"/>
+    <line x1="5"  y1="5"  x2="25" y2="25" stroke="black" stroke-width="1"/>
+    <line x1="25" y1="5"  x2="5"  y2="25" stroke="black" stroke-width="1"/>
+  </svg>
+</div>   
+    <section class="poem narrow" id="2-8">
 <h3>2.8 Vad vi ska göra nu</h3>
 <p class="vers">Vi ska vänja oss,
 Vi ska värja oss,
