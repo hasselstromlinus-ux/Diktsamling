@@ -35,7 +35,7 @@
                   position: sticky; top: 0; z-index: 2; background: var(--bg); padding-top: 0.25rem; padding-bottom: 0.4rem; box-shadow: 0 1px 0 rgba(0,0,0,0.06); }
     .poem { padding: 1.2rem 0 1.9rem; border-top: 1px dashed rgba(0,0,0,0.08); }
     .poem:first-of-type { border-top: none; }
-    .poem h3 { font-size: clamp(1.12rem, 3vw, 1.45rem); margin: 1rem 0 0.55rem 0; font-weight: 500; letter-spacing: 0.01em; text-align: left; }
+    .poem h3 { font-size: clamp(1.12rem, 3vw, 1.45rem); margin: 3rem 0 0.55rem 0; font-weight: 500; letter-spacing: 0.01em; text-align: left; }
     .vers { white-space: pre-wrap; margin: 0; font-size: 1.05rem; line-height: 1.6; }
     .footnotes { margin-top: 0.8rem; font-size: 0.85rem; }
     .footnotes-title { font-weight: 500; font-size: 0.92rem; letter-spacing: 0.02em; margin-bottom: 0.2rem; }
@@ -88,40 +88,19 @@
   text-align: left;              /* dikten ska vara vänsterställd */
 }
 
-/* Snirklig linje ovanför och under dikter */
-.poem-highlight {
-  position: relative;
-}
-
-/* Basstyle för snirklarna */
-.poem-highlight::before,
-.poem-highlight::after {
-  content: "";
-  display: block;
-
-  width: 24vw;               /* responsiv bredd */
-  max-width: 70px;           /* lagom stor på desktop */
-  aspect-ratio: 6 / 1;
-
-  background-image: url("snirkel-grey.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left center;
-
-  transform: translateX(20px);  /* handritad känsla */
-}
-
-/* Snirkel Ovanför dikten */
-.poem-highlight::before {
-  margin-top: 0.5em;
-  margin-bottom: 4em;        /* ⭐ MER LUFT UNDER SNIRKELN ⭐ */
-}
-
-/* Snirkel Under dikten */
-.poem-highlight::after {
-  margin-top: 2em;           /* luft ovanför nedre snirkeln */
-  margin-bottom: 0.5em;
-}
+/* Snirklig linje ovanför och under */
+    .poem-highlight::before,
+    .poem-highlight::after {
+    content: "";
+    display: block; 
+    width: 24vw; /* responsiv bredd */
+    max-width: 70px; /* lagom litet på desktop */
+    aspect-ratio: 6 / 1; margin: 0.5em 0; /* INGEN auto -> följer vänsterkanten */
+    background-image: url("snirkel-grey.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center; /* för snirkeln mot vänster */
+    transform: translateX(20px); /* liten handritad-känsla */ }
   </style>
 </head>
 <body>
