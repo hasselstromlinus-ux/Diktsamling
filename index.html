@@ -102,17 +102,26 @@
     background-position: left center; /* för snirkeln mot vänster */
     transform: translateX(20px); /* liten handritad-känsla */ }
 
-    /* Grafisk pausmarkör / divider */
+ /* PAUSMARKÖR – divider */
 .divider {
-  display: flex;
-  justify-content: center;
-  padding: 2.5rem 0;   /* luft ovanför och under symbolen */
+  display: block;        /* vänsterställd */
+  padding: 2.5rem 0;     /* luft ovanför och under symbolen */
 }
 
 .divider svg {
-  width: 30px;         /* lagom storlek – prova 24–36 vid behov */
+  width: 30px;           /* storlek på symbolen */
   height: 30px;
-  opacity: 0.8;        /* lite mjukare än kolsvart */
+  margin-left: 20px;     /* flytta den längre åt vänster — justera efter smak */
+  opacity: 0.9;          /* mild ton, inte för hårt */
+}
+
+/* Gör symbolen tydlig i både mörkt och ljust läge */
+.divider svg line,
+.divider svg rect,
+.divider svg path,
+.divider svg circle {
+  stroke: #888;          /* mellangrå – synlig på både svart och vit bakgrund */
+  fill: none;
 }
   </style>
 </head>
