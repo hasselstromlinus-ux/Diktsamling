@@ -88,33 +88,39 @@
   text-align: left;              /* dikten ska vara vänsterställd */
 }
 
-/* Snirklig linje ovanför och under */
+/* Snirklig linje ovanför och under dikter */
+.poem-highlight {
+  position: relative;
+}
+
+/* Basstyle för snirklarna */
 .poem-highlight::before,
 .poem-highlight::after {
   content: "";
   display: block;
 
-  width: 24vw;                   /* responsiv bredd */
-  max-width: 70px;               /* lagom litet på desktop */
+  width: 24vw;               /* responsiv bredd */
+  max-width: 70px;           /* lagom stor på desktop */
   aspect-ratio: 6 / 1;
-  margin: 0.5em 0;               /* grundluft runt snirkeln */
 
   background-image: url("snirkel-grey.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: left center;   /* snirkeln mot vänster */
+  background-position: left center;
 
-  transform: translateX(20px);  /* liten handritad-känsla */
+  transform: translateX(20px);  /* handritad känsla */
 }
 
-/* Extra luft UNDER snirkeln ovanför dikten */
+/* Snirkel Ovanför dikten */
 .poem-highlight::before {
-  padding-bottom: 2em;           /* justera upp/ner efter smak */
+  margin-top: 0.5em;
+  margin-bottom: 2em;        /* ⭐ MER LUFT UNDER SNIRKELN ⭐ */
 }
 
-/* (valfritt) extra luft ÖVER snirkeln under dikten */
+/* Snirkel Under dikten */
 .poem-highlight::after {
-  padding-top: 0.5em;            /* kan också sättas till 0 om du vill */
+  margin-top: 2em;           /* luft ovanför nedre snirkeln */
+  margin-bottom: 0.5em;
 }
   </style>
 </head>
