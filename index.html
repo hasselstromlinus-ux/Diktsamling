@@ -93,26 +93,28 @@
 .poem-highlight::after {
   content: "";
   display: block;
-  width: 24vw;                 /* responsiv bredd */
-  max-width: 70px;             /* lagom litet på desktop */
+
+  width: 24vw;                   /* responsiv bredd */
+  max-width: 70px;               /* lagom litet på desktop */
   aspect-ratio: 6 / 1;
+  margin: 0.5em 0;               /* grundluft runt snirkeln */
+
   background-image: url("snirkel-grey.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: left center;  /* snirkeln mot vänster */
-  transform: translateX(20px);      /* liten handritad-känsla */
+  background-position: left center;   /* snirkeln mot vänster */
+
+  transform: translateX(20px);  /* liten handritad-känsla */
 }
 
-/* Snirkeln ovanför dikten (mer luft *under*) */
+/* Extra luft UNDER snirkeln ovanför dikten */
 .poem-highlight::before {
-  margin-top: 0.5em;
-  margin-bottom: 1em;        /* extra luft nedåt */
+  padding-bottom: 1em;           /* justera upp/ner efter smak */
 }
 
-/* Snirkeln under dikten (mer luft *över*) */
+/* (valfritt) extra luft ÖVER snirkeln under dikten */
 .poem-highlight::after {
-  margin-top: 1.2em;           /* extra luft uppåt */
-  margin-bottom: 0.5em;
+  padding-top: 0.5em;            /* kan också sättas till 0 om du vill */
 }
   </style>
 </head>
